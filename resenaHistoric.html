@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!--Conexión Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Conexión FontAwesome-->
+    <script src="https://kit.fontawesome.com/9f28aa395a.js" crossorigin="anonymous"></script>
+
+    <title>Colegio Maria Reina Del Carmelo</title>
+</head>
+
+<body>
+
+    <!--Cabecera-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./Imagenes/escudo.png" alt="Escudo Colegio"
+                    style="width: 50%;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page"
+                            href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Contacto</a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="row g-3 needs-validation" validate>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom01" class="form-label">Nombres</label>
+                                                <input type="text" class="form-control" id="validationCustom01" value=""
+                                                    required>
+                                                <div class="valid-feedback">
+                                                    Por favor complete este campo.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom02" class="form-label">Apellidos</label>
+                                                <input type="text" class="form-control" id="validationCustom02" value=""
+                                                    required>
+                                                <div class="valid-feedback">
+                                                    Por favor complete este campo.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="validationCustom04" class="form-label">Asunto</label>
+                                                <select class="form-select" id="validationCustom04" required>
+                                                    <option selected disabled value="">Asunto</option>
+                                                    <option value="Docente">Sugerencia</option>
+                                                    <option value="Estudiante">Queja</option>
+                                                    <option value="Acudiente">Reclamo</option>
+                                                    <option value="Rector">Petición</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Seleccione el Asunto.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="validationCustom04" class="form-label">Perfil</label>
+                                                <select class="form-select" id="validationCustom04" required>
+                                                    <option selected disabled value="">Perfil</option>
+                                                    <option value="Docente">Docente</option>
+                                                    <option value="Estudiante">Estudiante</option>
+                                                    <option value="Acudiente">Acudiente</option>
+                                                    <option value="Rector">Rector(a)</option>
+                                                    <option value="Coordinador">Coordinador</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Seleccione su Perfil.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="validationCustom05" class="form-label">Teléfono</label>
+                                                <input type="text" class="form-control" id="validationCustom05"
+                                                    size="50" required>
+                                                <div class="invalid-feedback">
+                                                    Ingrese un número de telefono.
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label"
+                                                    required>Mensaje</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                    required></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck" required>
+                                                    <label class="form-check-label" for="invalidCheck">
+                                                        Agree to terms and conditions
+                                                    </label>
+                                                    <div class="invalid-feedback">
+                                                        You must agree before submitting.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <input class="btn btn-secondary" type="submit" value="Enviar">
+                                                <input class="btn btn-primary" type="reset">
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" aria-current="page"
+                            href="noticias.html">Noticias
+                            y comunicaciones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sobre nosotros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="mision.html">Misión</a></li>
+                            <li><a class="dropdown-item" href="#">Visión</a></li>
+                            <li><a class="dropdown-item" href="resenaHistoric.html">Reseña Historica</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="SimbolosInstitucionales.html">Simbolos
+                                    Institucionales</a></li>
+                            <li><a class="dropdown-item" href="Himno.html">Himno</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form action="#" target="_blank" method="post" class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" required>
+                    <button class="btn btn-outline-light btn-lg text-dark" type="submit"
+                        style="color: black; background:white; border: 1px solid black;"">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Info-->
+    <header class=" main-header">
+                        <div class="background-overlay text-white py-5">
+                            <div class="container">
+                                <div class="d-flex">
+                                    <div class="col-md-6 text-center justify-content-center align-self-center">
+                                        <h1>Colegio Maria<br>Reina del Carmelo</h1>
+                                        <br>
+                                        <p>"PARA LA GLORIA DE DIOS, MI CASA, MI CORAZÓN Y MI VIDA"</p>
+                                    </div>
+                                    <div id="carouselExampleFade" class="carrousel-img carousel slide carousel-fade"
+                                        data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./Imagenes/imagen1.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./Imagenes/imagen2.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./Imagenes/bg.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </header>
+
+
+                        <!--Mision-->
+                        <section class="bg-dark">
+                            <div class="container" style="padding: 40px;" ;>
+                                <div class="row" style="padding: 20px; border: 10px solid rgba(134, 137, 204, 0.6);">
+                                    <div class="al" style="color: white; text-align: center;">
+                                        <h1>Reseña Historica</h1>
+                                    </div>
+                                    <p style="color: white; text-align: center; padding: 40px;">
+                                        En el libro de crónicas de la Comunidad
+                                        María Reina del Carmelo, se encuentra la Crónica No.1 sobre el viaje
+                                        de las hermanas Carmelitas de San José hacia la ciudad de Medellín
+                                        Colombia, de acuerdo a estos datos, “El 25 de Noviembre de 1967, a
+                                        las 12:30, la Reverenda Madre superiora General Teresa Margarita del
+                                        Niño Jesús en la Capilla de Belén, de la Casa General de Santa Tecla
+                                        El Salvador C.A. despide pidiendo la bendición al Señor y a Madre
+                                        Clarita la comunidad de hermanas que está por salir rumbo a
+                                        Colombia.
+                                        <br>
+                                        <br>
+
+                                        1. M. Bernarda Maldonado.
+                                        <br>
+                                        2. H. Juana Marta de la Cruz Sarabia
+                                        <br>
+                                        3. H. Gudulia Teresa de Jesús.
+                                        <br>
+                                        4. H. Reina Emperatriz Rosa.
+                                        <br>
+                                        <br>
+
+
+                                        Quienes son enviadas a la ciudad de Medellín Colombia, para
+                                        responsabilizarse de la Administración del Colegio Agustiniano de
+                                        San Nicolás, propiedad de los Reverendos Padres Agustinos Recoletos,
+                                        en el Barrio Aranjuez de Medellín, Antioquia, Colombia.
+                                        <br>
+                                        <br>
+                                        Estas son algunas de las palabras que dirige la Reverenda Madre a
+                                        las hermanas que dentro de unos minutos viajaran a Medellín vía San
+                                        Andrés.
+                                        <br>
+                                        <br>
+                                        “Recuerden hermanas que del testimonio personal de cada una, depende
+                                        el fruto que han de recoger, deben permanecer unidas para que puedan
+                                        afrontar todos los problemas y dificultades que se presenten, porque
+                                        la Unidad hace la fuerza, que el Señor las bendiga en todo momento”.
+                                        <br>
+                                        <br>
+                                        En el año 1968, con gran solemnidad y con la presencia de los
+                                        Religiosos Agustinos, las Hermanas Carmelitas de San José y
+                                        Comunidad Educativa se Inaugura el Colegio Agustiniano de San
+                                        Nicolás, con 376 alumnos matriculados en 8 grupos desde Kínder y
+                                        Primaria (mixto)
+                                        <br>
+                                        <br>
+                                        Al finalizar el año 1971, por voluntad de Dios, y con la anuencia
+                                        del Consejo General de la Congregación de Carmelitas de San José y
+                                        los Sacerdotes Agustinos Recoletos se da por terminado el contrato
+                                        en el Colegio Agustiniano y se traslada la Comunidad de las Hermanas
+                                        Carmelitas de San José, para seguir con su labor educativa en el
+                                        Barrio Manrique Las Esmeraldas a la Kra. 45 A calle 86, en un local
+                                        propiedad de la Parroquia María Reina. En ese lugar inicia y se
+                                        funda El Colegio María Reina del Carmelo apoyadas por el Párroco de
+                                        ese lugar Reverendo Padre Manuel Banfranchi, inician el año escolar
+                                        l972, con 246 alumnos, desde jardín, Básica Primaria y Bachillerato.
+                                        <br>
+                                        <br>
+                                        La construcción En el año 1975 con alegría y entusiasmo Se traslada
+                                        la Comunidad de las hermanas Carmelitas de San José a la casa finca
+                                        que se encuentra en el terreno propiedad de la Congregación, y desde
+                                        allí
+                                        se desplazan algunas hermanas para atender el Colegio María Reina
+                                        del Carmelo
+                                        <br>
+                                        <br>
+                                        En el mes de Noviembre 1979, se trasladan definitivamente como
+                                        Colegio para iniciar el año escolar en enero de 1980 en las nuevas
+                                        instalaciones del Colegio María Reina del Carmelo a la Cra. 43 A No.
+                                        85-104 del Barrio Manrique Las Esmeraldas en terreno propio de la
+                                        Congregación de Carmelitas de San José, fue comprado con
+                                        anterioridad y con el esfuerzo de la Comunidad de las hermanas C.S.J
+                                        .por la Madre Bernarda Maldonado (Superiora). Iniciaron con mucho
+                                        entusiasmo con Preescolar y Primaria con doble jornada, Con licencia
+                                        de funcionamiento N. 000737 del 24 de noviembre de 1980.
+                                        <br>
+                                        <br>
+                                        Año tras año se han realizado mejoras, de lo cual pueden dar fe las
+                                        familias que desde el año 1980 han pertenecido a la comunidad
+                                        educativa Carmelitas de San José.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!--Footer - Pie de pagina-->
+                        <footer class="bg-dark">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="d-flex" style="flex-wrap: wrap;">
+                                        <div>
+                                            <h4>Sobre nosotros</h4>
+                                            <div>
+                                                <ul>
+                                                    <li><a href="mision.html">Misión</a></li>
+                                                    <li><a href="vision.html">Visión</a></li>
+                                                    <li><a href="resenaHistoric.html">Reseña Historica</a></li>
+                                                    <li><a href="SimbolosInstitucionales.html">Simbolos
+                                                            Institucionales</a></li>
+                                                    <li><a href="Himno.html">Himno</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4>Servicios web</h4>
+                                            <div>
+                                                <ul>
+                                                    <li><a href="docentes.html">Nuestros Docentes</a></li>
+                                                    <li>
+                                                        <a href="index.html">Calificaciones</a>
+                                                    </li>
+                                                    <li><a href="">Gestion Academica</a></li>
+                                                    <li><a href="noticias.html">Noticias y comunicaciones</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4>Contactos</h4>
+                                            <div class="contactos">
+                                                <ul>
+                                                    <li><a>Teléfono: 448 32 99</a></li>
+                                                    <li><a>Dirección: Carrera 43A No. 85 - 104, Barrio Manrique</a></li>
+                                                    <li><a>Email: Colegiomrc@gmail.com</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4>Encuentranos, Es facil</h4>
+                                            <div>
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d404.9959469146066!2d-75.55111025371039!3d6.277695951648588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428c78d7cb905%3A0x2164228c4b3d81be!2sColegio%20Mar%C3%ADa%20Reina%20del%20Carmelo!5e0!3m2!1ses!2sco!4v1670034519628!5m2!1ses!2sco"
+                                                    width="350" height="200" style="border:0;" allowfullscreen=""
+                                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                                    alt="mapa"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container p-3">
+                                        <p class="text-light text-center">Copyright &copy; 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+
+
+
+                        <!--JS Boostrap-->
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                            crossorigin="anonymous"></script>
+                        <!--Separate-->
+                        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+nav div ul li{
+    transition: all 0.4s;
+    margin: 5px;
+}
+
+nav div ul li:hover {
+    background-color: rgb(87, 87, 87);
+}
+
+.main-header {
+    position: relative;
+    background: url(./Imagenes/bg.png);
+    background-size: cover;
+    min-height: 500px;
+}
+
+.background-overlay {
+    position: absolute;
+    background: rgba(48, 51, 107, .6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-body img{
+    width: 20%;
+    text-align: center;
+}
+
+.redes-sociales{
+    transition: all 0.4s;
+}
+
+.redes-sociales:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.carrousel-img{
+    width: 800px;
+    height: 400px;
+}
+
+.carrousel-img img{
+    width: 800px;
+    height: 400px;
+}
+
+.btn{
+    transition: all 0.4s;
+}
+
+.btn:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+footer{
+    background-color: gray;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+footer h4{
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+footer ul{
+    list-style: none;
+    margin-right: 20px;
+}
+
+footer ul li{
+    text-align: left;
+    border-left: 1px solid white;
+    padding: 5px 5px;
+    
+}
+
+
+footer ul li a{
+    text-decoration: none;
+    color: rgba(228, 228, 228, 0.905);
+    text-align: left;
+    margin: 2px;
+    transition: all 0.4s;
+}
+
+footer ul li a:hover{
+    color: rgb(255, 220, 154);
+}
+
+.contactos li{
+    color: white;
+}
+
+.simbolos{
+    text-align: center;
+    padding: 40px;
+}
+
+.simbolos .escudo{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.simbolos .bandera{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+
+
+.bandera{
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 20%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
